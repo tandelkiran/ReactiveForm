@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
             title: ['', Validators.required],
             firstName: ['', [Validators.required,Validators.pattern("[a-zA-Z]+(?:(?:\. |[' ])[a-zA-Z]+)*")]],
             domain: ['', [Validators.required,Validators.pattern('^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$')]],
-            // site: ['', [Validators.required,Validators.pattern('((?:(?:(?:\w[\.\-\+]?)*)\w)+)((?:(?:(?:\w[\.\-\+]?){0,62})\w)+)\.(\w{2,6})$')]],
             email: ['', [Validators.required, Validators.pattern('[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}')]],
             password: ['', [Validators.required, Validators.minLength(6)]],
             confirmPassword: ['', Validators.required],
